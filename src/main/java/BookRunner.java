@@ -13,9 +13,14 @@ public class BookRunner {
         Book book3 = new Book();
         book3.setTitle("Clean Code");
 
-        System.out.println(String.format( "Name: %s", book1.getTitle()));
-        System.out.println(String.format( "Name: %s", book2.getTitle()));
-        System.out.println(String.format( "Name: %s", book3.getTitle()));
+        book1.Incremento();
+        book2.Incremento();
+        book3.Incremento();
+        book3.Incremento();
+
+        System.out.println(String.format( "Name: %s, Versao: %d", book1.getTitle(), book1.getVersao()));
+        System.out.println(String.format( "Name: %s, Versao: %d", book2.getTitle(), book2.getVersao()));
+        System.out.println(String.format( "Name: %s, Versao: %d", book3.getTitle(), book3.getVersao()));
     }
 
 
